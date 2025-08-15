@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Desenvolvimento Web - Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Guia Dev Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tecnologias.html">Tecnologias</a></li>
+                    <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                    <li><a href="fluxo.html">Fluxo</a></li>
+                    <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Alternar tema claro/escuro">🌗</button>
+        </div>
+    </header>
+
+    <main class="quiz">
+        <div class="container">
+            <div class="quiz-intro" aria-hidden="false">
+                <h2>Quiz de Desenvolvimento Web</h2>
+                <p>Teste seus conhecimentos com 10 perguntas sobre desenvolvimento web!</p>
+                <div class="high-score">
+                    <p>Sua melhor pontuação: <span>0</span>/10</p>
+                </div>
+                <button class="btn-primary start-quiz">Começar Quiz</button>
+            </div>
+
+            <div class="quiz-questions" aria-hidden="true">
+                <div class="progress">
+                    Questão <span class="current">1</span> de <span class="total">10</span>
+                </div>
+                
+                <div class="question">
+                    <!-- Questões serão inseridas via JavaScript -->
+                </div>
+                
+                <button class="btn-primary next-question" disabled>Próxima</button>
+            </div>
+
+            <div class="quiz-results" aria-hidden="true">
+                <h2>Resultados</h2>
+                <div class="score">
+                    <p>Sua pontuação: <span>0</span>/10</p>
+                </div>
+                <div class="explanations">
+                    <!-- Explicações serão inseridas via JavaScript -->
+                </div>
+                <button class="btn-primary restart-quiz">Tentar Novamente</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guia Dev Web. Desenvolvido por Lucca</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#termos">Termos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

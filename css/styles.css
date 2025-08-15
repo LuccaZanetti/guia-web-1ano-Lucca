@@ -1,0 +1,205 @@
+:root {
+    /* Cores */
+    --color-primary: #2563EB;
+    --color-secondary: #10B981;
+    --color-text: #111827;
+    --color-background: #F3F4F6;
+    --color-border: #E5E7EB;
+    
+    /* Fontes */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Tema escuro */
+[data-theme="dark"] {
+    --color-text: #F9FAFB;
+    --color-background: #111827;
+    --color-border: #374151;
+}
+
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-background);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.header h1 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Hero */
+.hero {
+    padding: 8rem 0 4rem;
+    text-align: center;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: white;
+}
+
+.hero h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Cards */
+.cards {
+    padding: 4rem 0;
+}
+
+.cards .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background-color: var(--color-background);
+}
+
+.card h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.card pre {
+    background-color: #1F2937;
+    color: #F9FAFB;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.card-tip {
+    color: var(--color-secondary);
+    font-style: italic;
+}
+
+/* Botões */
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1D4ED8;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-background);
+    border-top: 1px solid var(--color-border);
+    padding: 2rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+footer nav a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header nav {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}

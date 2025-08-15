@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Práticas - Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Guia Dev Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tecnologias.html">Tecnologias</a></li>
+                    <li><a href="boas-praticas.html" aria-current="page">Boas Práticas</a></li>
+                    <li><a href="fluxo.html">Fluxo</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Alternar tema claro/escuro">🌗</button>
+        </div>
+    </header>
+
+    <main class="practices">
+        <div class="container">
+            <h2>Boas Práticas de Desenvolvimento Web</h2>
+            
+            <div class="progress-bar">
+                <div class="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="accordion">
+                <!-- Seção 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <h3>Semântica & Acessibilidade</h3>
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="practice-check">
+                                    Use elementos HTML5 semânticos (header, nav, main, article, etc.)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="practice-check">
+                                    Adicione atributos ARIA quando necessário
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="practice-check">
+                                    Mantenha uma hierarquia clara de cabeçalhos (h1-h6)
+                                </label>
+                            </li>
+                        </ul>
+                        <pre><code>&lt;header role="banner"&gt;
+    &lt;nav role="navigation"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#" aria-current="page"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Seção 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <h3>Responsividade</h3>
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="practice-check">
+                                    Design Mobile-First
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="practice-check">
+                                    Use unidades flexíveis (rem, em, %)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="practice-check">
+                                    Implemente Grid e Flexbox apropriadamente
+                                </label>
+                            </li>
+                        </ul>
+                        <pre><code>/* Mobile First */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 85%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+        max-width: 1200px;
+    }
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Outras seções seguem o mesmo padrão -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guia Dev Web. Desenvolvido por Lucca</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#termos">Termos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/boas-praticas.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

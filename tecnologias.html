@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias Web - Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Guia Dev Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tecnologias.html" aria-current="page">Tecnologias</a></li>
+                    <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                    <li><a href="fluxo.html">Fluxo</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Alternar tema claro/escuro">🌗</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="container">
+                <div class="search-bar">
+                    <input type="search" id="tech-search" placeholder="Buscar tecnologia..." 
+                           aria-label="Buscar tecnologia">
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="frontend">Front-end</button>
+                    <button class="filter-btn" data-category="backend">Back-end</button>
+                    <button class="filter-btn" data-category="database">Banco de Dados</button>
+                    <button class="filter-btn" data-category="devops">DevOps</button>
+                    <button class="filter-btn" data-category="testing">Testes</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-grid">
+            <div class="container">
+                <!-- Cards serão inseridos via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guia Dev Web. Desenvolvido por Lucca</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#termos">Termos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <div class="modal" id="tech-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">×</button>
+            <div class="modal-body">
+                <!-- Conteúdo do modal será inserido via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/tecnologias.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

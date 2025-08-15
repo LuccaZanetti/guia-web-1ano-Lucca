@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Guia Dev Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="tecnologias.html">Tecnologias</a></li>
+                    <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                    <li><a href="fluxo.html">Fluxo</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Alternar tema claro/escuro">🌗</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Aprenda Desenvolvimento Web do Zero ao Pro</h2>
+                <p>Um guia completo sobre HTML, CSS e JavaScript para iniciar sua jornada.</p>
+                <a href="#cards" class="btn-primary">Começar</a>
+            </div>
+        </section>
+
+        <section id="cards" class="cards">
+            <div class="container">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>A linguagem de marcação que estrutura o conteúdo web</p>
+                    <pre><code>&lt;article&gt;
+    &lt;h1&gt;Título&lt;/h1&gt;
+    &lt;p&gt;Conteúdo&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                    <p class="card-tip">Use quando precisar estruturar conteúdo web</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>A linguagem que estiliza e formata o visual</p>
+                    <pre><code>.card {
+    display: flex;
+    padding: 1rem;
+    border-radius: 8px;
+}</code></pre>
+                    <p class="card-tip">Use para criar layouts e estilos visuais</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>A linguagem que adiciona interatividade</p>
+                    <pre><code>document.querySelector('.btn')
+    .addEventListener('click', () => {
+    alert('Clicou!');
+});</code></pre>
+                    <p class="card-tip">Use para criar interações e funcionalidades</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guia Dev Web. Desenvolvido por Lucca</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#termos">Termos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
